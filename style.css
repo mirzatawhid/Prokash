@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+li,a{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #171717;
+    text-decoration: none;
+}
+
+button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #171717;
+    text-decoration: none;
+    padding: 9px 20px;
+    border: 0;
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 8%;
+}
+
+.logo{
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.nav_links{
+    list-style: none;
+    margin-left: 5px;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a:hover{
+    color: #0098FF;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    background-image: url(images/home_main.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_logo{
+}
+
+.banner_txt{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+h1{
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 90px;
+    text-align: center;
+    padding: 40px;
+}
+
+.box {
+    background-color: white;
+    border: 0;
+    border-radius: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box_title{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #0980FF;
+}
+
+.box_img{
+    margin-top: 60px;
+}
+
+.box_desc{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.features_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
