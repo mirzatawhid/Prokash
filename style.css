@@ -260,7 +260,7 @@ section{
     align-items: center;
 }
 .title{
-    font-size: 3 rem;
+    font-size: 3.5rem;
     margin: 2 rem 0 rem;
 }
 .faq{
@@ -271,12 +271,12 @@ section{
     cursor:pointer;
 }
 .question{
-display: flex;
+display:flex;
 justify-content: space-between;
 align-items: center;
 }
 .question h3{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .answer{
     max-height: 0;
