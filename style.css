@@ -35,11 +35,16 @@ button:hover{
 }
 
 header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 10px 8%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788);
 }
 
 .logo{
@@ -74,9 +79,6 @@ header{
     align-items: center;
 }
 
-.banner_logo{
-}
-
 .banner_txt{
     font-family: "Montserrat",sans-serif;
     font-weight: 500;
@@ -85,12 +87,15 @@ header{
     font-size: 40px;
 }
 
+.features_section{
+    padding: 2% 8% 8% 8%;
+}
+
 h1{
     font-family: "Montserrat";
     font-weight: 800;
-    font-size: 90px;
+    font-size: 65px;
     text-align: center;
-    padding: 40px;
 }
 
 .box {
@@ -99,31 +104,38 @@ h1{
     border-radius: 40px;
     text-align: center;
     margin: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
 }
 
 .box_title{
     font-family: "Montserrat",sans-serif;
     font-weight: 700;
     font-size: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 80%;
+    height: auto;
     color: #0980FF;
+    margin: 10%;
 }
 
 .box_img{
-    margin-top: 60px;
+    margin-top: 10%;
 }
 
 .box_desc{
     font-family: "Montserrat",sans-serif;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .features_container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1% 5% 5% 5%;
 }
 
 .footer{
