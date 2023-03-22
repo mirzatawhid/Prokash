@@ -92,7 +92,7 @@ header{
 }
 
 .features_section{
-    padding: 5% 8% 8% 8%;
+    padding: 5% 8% 5% 8%;
 }
 
 h1{
@@ -141,16 +141,13 @@ h1{
     align-items: center;
     padding: 1% 5% 5% 5%;
 }
-.section{
-    width: 100%;
-    min-height: 100vh;
-    background-color: #ddd;
-}
+
 .container{
     width: 80%;
     display: block;
     margin: auto;
-    padding-top: 100px;
+    height: auto;
+    margin-bottom: 10%;
 }
 .content-section{
     float: left;
@@ -164,50 +161,34 @@ h1{
     width: 100%;
     height: auto;
 }
-.content-section .title{
-text-transform: uppercase;
-font-size: 28px;
-color: #0f465d;
+
+.section .title{
+font-family: "Montserrat",sans-serif;
+font-weight: 800;
+text-align: center;
+font-size: 65px;
+color: black;
 }
+
+.section h1{
+    padding: 5%;
+}
+
 .content-section .content h3{
-    margin-top: 20px;
-    color: #1d1e42;
-    font-size: 20px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    color: #0980FF;
+    font-size: 50px;
 }
 .content-section .content p{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
     margin-top: 10px;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1.6;
 }
-.content-section .content .button a{
-    margin-top: 50px;
-   
-}
-.content-section .content .button a{
-    background-color: #3d3d3d;
-    padding: 6px 30px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 1.5px;
-}
-.content-section .content .button a:hover{
-    background-color: #344349;
-    color: #908a8a;
-}
-.content-section .social{
-    margin:35px 35px;
 
-}
-.content-section .social i{
-    color:#345570;
-    font-size: 30px;
-    padding: 5px 10px;
-}
-.content-section .social i:hover{
-    color: #2e6175;
-}
 @media screen and (max-width:768px){
     .container{
         width: 80%;
@@ -247,17 +228,16 @@ color: #0f465d;
     text-align: center;
 }
 }
-body{
-    font-family: sans-serif;
-    background: #b4bbbe;
-}
-section{
+
+
+.faq_section{
     min-height: 100vh;
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20%;
 }
 .title{
     font-size: 3 rem;
