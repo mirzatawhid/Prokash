@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(240, 240, 240);
+    background-color: #a5e1ff2c;
 }
 
 li,a{
@@ -27,6 +27,11 @@ button{
     padding: 9px 20px;
     border: 0;
     background-color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #0098FF;
 }
 
 header{
