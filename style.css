@@ -121,4 +121,67 @@ h1{
     align-items: center;
 }
 
+.footer{
+    padding: 40px 0;
+    background-color: #302e2e;
+    bottom: 0;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #ebebdf;
+}
+.footer .social a{
+    font-size: 25px;
+    color: inherit;
+    border: 1px solid #383836;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 15px;
+    opacity: 0.75;
+}
+.footer .social a:hover{
+    opacity: 0.9;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-align: center;
+    
+}
+.footer ul li a{
+    color:#fffdfd;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+.footer .copyright{
+    font-family: "Montserrat",sans-serif;
+    margin-top:-4px;
+    text-align: center;
+    font-size: 20px;
+    color: #cacccf;
+    margin: 4px;
+}
+
+.footer_logo{
+    text-align: center;
+    margin-bottom: 2%;
+}
 
