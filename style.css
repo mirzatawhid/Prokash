@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #a5e1ff2c;
 }
@@ -88,7 +92,7 @@ header{
 }
 
 .features_section{
-    padding: 2% 8% 8% 8%;
+    padding: 5% 8% 8% 8%;
 }
 
 h1{
