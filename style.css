@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    background-color: #a5e1ff2c;
+    background-color: #afe4ff16;
 }
 
 li,a{
@@ -142,142 +142,87 @@ h1{
     padding: 1% 5% 5% 5%;
 }
 
-.container{
-    width: 80%;
-    display: block;
-    margin: auto;
-    height: auto;
-    margin-bottom: 10%;
-}
-.content-section{
-    float: left;
-    width: 55%;
-}
-.image-section{
-    float: right;
-    width: 40%;
-}
-.image-section img{
-    width: 100%;
-    height: auto;
+/**about**/
+
+.about_section{
+    padding: 0% 5% 5% 5%;
 }
 
-.section .title{
-font-family: "Montserrat",sans-serif;
-font-weight: 800;
-text-align: center;
-font-size: 65px;
-color: black;
+.about_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3% 5% 5% 5%;
 }
 
-.section h1{
-    padding: 5%;
+.about_content{
+    width: 50%;
+    
 }
 
-.content-section .content h3{
+.about_content h3{
     font-family: "Montserrat",sans-serif;
     font-weight: 700;
+    font-size: 45px;
+    width: 80%;
+    height: auto;
     color: #0980FF;
-    font-size: 50px;
 }
-.content-section .content p{
+
+.about_content p{
     font-family: "Montserrat",sans-serif;
     font-weight: 500;
-    margin-top: 10px;
-    font-family: sans-serif;
-    font-size: 30px;
-    line-height: 1.6;
+    font-size: 20px;
+    height: auto;
+    margin-top: 2%;
 }
 
-@media screen and (max-width:768px){
-    .container{
-        width: 80%;
-        display: block;
-        margin: auto;
-        padding-top: 50px;  
+.about_image{
+    width: 40%;
 }
-.content-section{
-    float: none;
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-.image-section{
-    float: none;
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-.image-section img{
+
+.about_image img{
     width: 100%;
     height: auto;
-    display: block;
-    margin: auto;
-}
-.content-section .title{
-    text-align: center;
-    font-size: 19px;
-}
-.content-section .content .button a{
-    text-align: center;
-}
-.content-section .content .button a{
-    padding: 9px 30px;
-}
-.content-section .social{
-    text-align: center;
-}
 }
 
+/**FAQ SECTION**/
 
-.faq_section{
-    min-height: 100vh;
-    width: 80%;
-    margin: 0 auto;
+.faq_container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20%;
+    justify-content: space-evenly;
+    padding: 2% 5% 5% 5%;
 }
-.title{
-    font-size: 3.5rem;
-    margin: 2 rem 0 rem;
-}
-.faq{
-    max-width: 700px;
-    margin-top: 2rem;
-    padding-bottom: 1 rem;
-    border-bottom: 2px solid #616668;
-    cursor:pointer;
-}
-.question{
-display:flex;
-justify-content: space-between;
-align-items: center;
-}
-.question h3{
-    font-size: 1.5rem;
-}
-.answer{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1.4s ease;
-}
-.answer p{
-    padding-top: 1rem;
-    line-height: 1.6;
-    font-size: 1.4rem;
-}
-.faq.active.answer{
-    max-height: 300px;
-}
-.faq.active.svg{
-    transform:rotate(180deg);
-}
-svg{
-    transition: transform 0.5s ease-in;
-}
+
+.faq_box{
+    width: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 1%;
+    margin: 1%;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
     
+}
+
+.ques{
+    padding: 1%;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600;
+    color: #0980FF;
+}
+
+.icon{
+    margin-left: auto;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    padding: 1%;
+}
 
 .footer{
     padding: 40px 0;
