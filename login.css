@@ -1,107 +1,139 @@
-/**log in**/
-.link{
-    color: darkorchid;
-    text-decoration: none;
-    display: inline-block;
-}
-.link:hover{
-    text-decoration: none;
-}
-.box{
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
 }
 
-.box .box-cont{
-    width: 50%;
-    height: 100%;
-    position: relative;
+.container{
+    position :block;
+
 }
-.box .box-cont img{
-    width: 100%;
-    height: 100%;
+
+.side_image{
+    width: 45%;
+    height: 100vh;
+    padding-right: 2%;
+    left: 0;
+    top: 0;
+}
+
+.side_image img{
+    width: 120%;
+    height: 100vh;
     object-fit: cover;
 }
-.box .box-form{
-    padding: 20px;
+
+.side_form{
+    width: 35%;
+    height: 100vh;
     display: flex;
-    height: 100%;
+    justify-content: center;
     align-items: center;
-    position: relative;
-}
-.inner{
-    max-width: 350px;
-    margin: auto;
-}
-.form-head .title{
-    font-weight: bold;
-    color:black;
-}
-.form-group{
-    margin-bottom: 20px;
-}
-.form-group .label-text{
-    font-size: 18px;
-    margin-bottom: 5px;
-}
- .form-control{
-    width: 100%;
-    height: 50px;
-    padding: 7px;
-    border: none;
-    border: 1px solid rgb(67, 100, 160);
-    border-radius: 6px;
-    outline: none;
-    box-shadow: 5px;
-}
-.check-action{
-    position: relative;
-}
-.check-action .check{
+    background-color: white;
     position: absolute;
+    right: 0;
     top: 0;
-    left: 0;
+}
+
+.form_container{
+    max-width: 850px;
     width: 100%;
-    height: 100%;
-    opacity: 0;
 }
-.check-action .name{
-    display: inline-block;
+
+.form_container .top_logo{
+    width: 12%;
+    height: auto;
+    margin-bottom: 1%;
 }
-.check-action .name::before{
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    content: "";
-    border-radius: 10%;
-    border: 1px solid #4a60a7;
-    margin-right: 7px;
-    vertical-align: center;
-    text-align: center;
-    font-size: 12px;
+
+.form_container .title{
+    font-size: 4vh;
+    font-weight: 700;
 }
-.check-action .check:checked.name::before{
+
+.form_container form .user_detail{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user_detail .input_box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+form .user_detail .address_box{
+    width: 100%;
+}
+
+.user_detail .input_box .detail{
+    font-weight: 500;
+    display: block;
+}
+
+.user_detail .input_box input{
+    height: 40px;
+    width:350px;
+    margin-top: 1.5%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 80%;
+    font-family: "Montserrat";
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user_detail .input_box input:focus,
+.user_detail .input_box input:valid{
+    border-color: #0098FF;
+}
+
+form .button input{
+    color: white;
+    height: 40px;
+    width: 350px;
+    font-size: 2vh;
+    padding: 2%;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background: #0098FF;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.26);
+}
+
+form .button input:hover{
+    cursor: pointer;
+    border: 1px solid #0098FF;
+    background: none;
     color: black;
 }
-.action .button{
-    width: 100%;
-    padding: 8px 12px;
-    font-size: 15px;
-    border: 0px;
-    background-color:#778eda;
-    font-weight: bold;
-    border-radius: 3%;
-    margin-top: 15px;
+.form-button{
+    display: flex;
+    flex-direction: row;
+    width:65%;
+    justify-content:space-between;
+    margin:14px;
+    
 }
-.action .button:hover{
-    background-color: rgb(37, 74, 143);
-    cursor: pointer;
-    color: aliceblue;
+.left{
+    display: flex;
 }
-p{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 15px;
-    }
+.lebel a{
+    color: #ccc;
+    text-decoration: none;
+}
+.bottom-reg{
+display: block;
+position: absolute;
+text-align:justify;
+right: 0;
+left: 0px;
+margin-top: 8px;
+
+}

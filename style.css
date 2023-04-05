@@ -122,21 +122,11 @@ h1{
 .box_title{
     font-family: "Montserrat",sans-serif;
     font-weight: 700;
-<<<<<<< HEAD
-    font-size: 2vw;
-    width: 80%;
-    height: auto;
-    color: #0980FF;
-    text-align: center;
-    padding: 10%;
-    margin: auto;
-=======
     font-size: 2.5vw;
     width: 80%;
     height: auto;
     color: #0980FF;
     margin: 10% 10% 5% 10%;
->>>>>>> 8736fd9ac8d544196244299fdab49958f91a365d
 }
 
 .box_img{
@@ -161,12 +151,7 @@ h1{
     padding: 1% 5% 0% 5%;
 }
 
-<<<<<<< HEAD
-
-/**about**/
-=======
 /*about section*/
->>>>>>> 8736fd9ac8d544196244299fdab49958f91a365d
 
 .about_sec{
     display: flex;
