@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <div class="side_image">
-        <img src="images/register_pic.jpg" alt="Side Image" class="side_pic" />
+        <img src="images/reg_pic1.png" alt="Side Image" class="side_pic" />
       </div>
       <div class="side_form">
         <div class="form_container">

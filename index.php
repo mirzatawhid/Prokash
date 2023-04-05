@@ -33,7 +33,7 @@
       </nav>
       <div class="btn">
         <a class="login" href="#"><button>Login</button></a>
-        <a class="register" href="register.html"><button>Register</button></a>
+        <a class="register" href="register.php"><button>Register</button></a>
       </div>
     </header>
 
