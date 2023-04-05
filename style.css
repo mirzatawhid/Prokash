@@ -71,6 +71,8 @@ header{
     color: #0098FF;
 }
 
+/*Banner*/
+
 .banner{
     width: 100%;
     height: auto;
@@ -91,7 +93,11 @@ header{
     font-size: 40px;
 }
 
+/*Feature Section*/
+
 .features_section{
+    width: 100%;
+    height: 70%;
     padding: 5% 8% 5% 8%;
 }
 
@@ -103,6 +109,8 @@ h1{
 }
 
 .box {
+    width: 40%;
+    height: 65vh;
     background-color: white;
     border: 0;
     border-radius: 40px;
@@ -114,6 +122,7 @@ h1{
 .box_title{
     font-family: "Montserrat",sans-serif;
     font-weight: 700;
+<<<<<<< HEAD
     font-size: 2vw;
     width: 80%;
     height: auto;
@@ -121,6 +130,13 @@ h1{
     text-align: center;
     padding: 10%;
     margin: auto;
+=======
+    font-size: 2.5vw;
+    width: 80%;
+    height: auto;
+    color: #0980FF;
+    margin: 10% 10% 5% 10%;
+>>>>>>> 8736fd9ac8d544196244299fdab49958f91a365d
 }
 
 .box_img{
@@ -130,66 +146,66 @@ h1{
 .box_desc{
     font-family: "Montserrat",sans-serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 3vh;
     width: 80%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    padding: 5%;
 }
 
 .features_container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1% 5% 5% 5%;
+    padding: 1% 5% 0% 5%;
 }
 
+<<<<<<< HEAD
 
 /**about**/
+=======
+/*about section*/
+>>>>>>> 8736fd9ac8d544196244299fdab49958f91a365d
 
-.about_section{
-    padding: 0% 5% 5% 5%;
-}
-
-.about_container{
+.about_sec{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 3% 5% 5% 5%;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.about_content{
-    width: 50%;
-    
+.wrapper{
+    width: 75%;
+    margin: 5%;
 }
 
-.about_content h3{
+.wrapper img{
+    max-width: 40%;
+    float: right;
+    margin-left: 2%;
+    padding: 2%;
+}
+
+.text_box h2{
     font-family: "Montserrat",sans-serif;
     font-weight: 700;
-    font-size: 45px;
-    width: 80%;
-    height: auto;
+    font-size: 5.5vh;
     color: #0980FF;
 }
 
-.about_content p{
+.text_box p{
     font-family: "Montserrat",sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    height: auto;
+    font-size: 2.5vh;
     margin-top: 2%;
 }
 
-.about_image{
-    width: 40%;
-}
-
-.about_image img{
-    width: 100%;
-    height: auto;
-}
-
 /**FAQ SECTION**/
+
+.faq_section{
+    padding: 5% 8% 0% 8%;
+}
 
 .faq_container{
     display: flex;
