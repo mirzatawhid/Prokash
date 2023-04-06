@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css" />
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
   <div class="container">
@@ -16,13 +16,14 @@
       <div class="form_container">
         <img class="top_logo" src="images/banner_logo.png" alt="logo">
         <div class="title">Login</div>
-        <form action="#">
+        <form action="process.php" method="post">
           <div class="user_detail">
             
             <div class="input_box">
               <span class="detail">Email:</span>
               <input
-                type="email"
+                type="text"
+                name = "username" 
                 placeholder="Enter Your User Name"
                 required
               />
@@ -32,6 +33,7 @@
               <span class="detail">Password:</span>
               <input
                 type="password"
+                name="password"
                 placeholder="Enter Your Password"
                 required
               />
@@ -54,7 +56,7 @@
       </div>
       
       <div class="bottom-reg">
-        Not yet a User?<a href="#" style="text-decoration: none" class="register.css"> Register here </a>
+        Not yet a User?<a href="register.php" style="text-decoration: none"> Register here </a>
       </div>
 
     </div>

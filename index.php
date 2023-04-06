@@ -33,7 +33,7 @@
         </ul>
       </nav>
       <div class="btn">
-        <a class="login" href="login.html"><button>Login</button></a>
+        <a class="login" href="login.php"><button>Login</button></a>
         <a class="register" href="register.php"><button>Register</button></a>
       </div>
     </header>
@@ -141,7 +141,7 @@
       <section class="footer" id="contact">
         <div class="footer_logo">
           <img
-            src="/images/footer_Logo.png"
+            src="images/footer_logo.png"
             alt="footer logo"
             width="141px"
             height="57px"

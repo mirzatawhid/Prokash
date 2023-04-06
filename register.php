@@ -10,30 +10,11 @@
   <body>
     <div class="container">
       <div class="side_image">
-        <img src="images/reg_pic1.png" alt="Side Image" class="side_pic" />
+        <img src="images/reg_pic.jpg" alt="Side Image" class="side_pic" />
       </div>
       <div class="side_form">
         <div class="form_container">
-          <?php
-
-          require 'connection.php';
-            if (isset($_POST["submit"])) {
-              $fullname = $_POST["fullName"];
-              $username = $_POST["userName"];
-              $email = $_POST["email"];
-              $password = $_POST["password"];
-              $rpassword = $_POST["rpassword"];
-              $mobile = $_POST["mobile"];
-              $address = $_POST["address"];
-              $nid = $_POST["nid"];
-              $location = $_POST["location"];
-              $city = $_POST["city"];
-              $district = $_POST["district"];
-            
-              $query = "INSERT INTO user_details VALUES ('','$fullname','$username','$email','$mobile','$password','$address','$nid','$location','$city','$district')";
-              mysqli_query($conn,$query);
-            }
-          ?>
+          
           <br>
           <img class="top_logo" src="images/banner_logo.png" alt="logo">
           <div class="title">Registration</div>
@@ -62,7 +43,7 @@
                 <input
                   type="email"
                   name="email"
-                  placeholder="Enter Your User Name"
+                  placeholder="Enter Your Email"
                   required
                 />
               </div>
@@ -140,6 +121,27 @@
               <input type="submit" value="Sign Up" name="submit"/>
             </div>
           </form>
+          <?php
+
+          require 'connection.php';
+            if (isset($_POST["submit"])) {
+              $fullname = $_POST["fullName"];
+              $username = $_POST["userName"];
+              $email = $_POST["email"];
+              $password = $_POST["password"];
+              $rpassword = $_POST["rpassword"];
+              $mobile = $_POST["mobile"];
+              $address = $_POST["address"];
+              $nid = $_POST["nid"];
+              $location = $_POST["location"];
+              $city = $_POST["city"];
+              $district = $_POST["district"];
+            
+              $query = "INSERT INTO user_details VALUES ('','$fullname','$username','$email','$mobile','$password','$address','$nid','$location','$city','$district')";
+              mysqli_query($conn,$query);
+              echo "Registration Successfully!";
+            }
+          ?>
         </div>
       </div>
     </div>
