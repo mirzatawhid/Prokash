@@ -6,8 +6,9 @@
     font-family: "Montserrat",sans-serif;
 }
 
-.container{
+.login_container{
     position :block;
+    width: 100%;
 
 }
 
@@ -94,10 +95,10 @@ form .user_detail .address_box{
     border-color: #0098FF;
 }
 
-form .button input{
+.signin_button{
     color: white;
-    height: 40px;
-    width: 350px;
+    height: 100%;
+    width: 100%;
     font-size: 2vh;
     padding: 2%;
     font-weight: 600;
