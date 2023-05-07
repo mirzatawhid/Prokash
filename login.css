@@ -7,27 +7,25 @@
 }
 
 .login_container{
-    position :block;
-    width: 100%;
-
+    position: block;
 }
 
-.side_image{
+.login_container .side_image{
     width: 45%;
     height: 100vh;
     padding-right: 2%;
-    left: 0;
-    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
 }
 
-.side_image img{
-    width: 120%;
-    height: 100vh;
-    object-fit: cover;
-}
+
 
 .side_form{
-    width: 35%;
+    width: 55%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -39,12 +37,13 @@
 }
 
 .form_container{
-    max-width: 850px;
-    width: 100%;
+    max-width: 700px;
+    width: 45%;
+    position: relative;
 }
 
 .form_container .top_logo{
-    width: 12%;
+    width: 15%;
     height: auto;
     margin-bottom: 1%;
 }
@@ -56,14 +55,14 @@
 
 .form_container form .user_detail{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
     margin: 20px 0 12px 0;
 }
 
 form .user_detail .input_box{
-    width: calc(100% / 2 - 20px);
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -78,7 +77,7 @@ form .user_detail .address_box{
 
 .user_detail .input_box input{
     height: 40px;
-    width:350px;
+    width: 100%;
     margin-top: 1.5%;
     outline: none;
     border-radius: 5px;
@@ -95,7 +94,7 @@ form .user_detail .address_box{
     border-color: #0098FF;
 }
 
-.signin_button{
+form .button input{
     color: white;
     height: 100%;
     width: 100%;
@@ -115,27 +114,27 @@ form .button input:hover{
     background: none;
     color: black;
 }
+
+.alertbox{
+    width: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.26);
+}
+
+.home_button{
+    position: absolute;
+    right: 0;
+}
+
+.home_button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
 .form-button{
     display: flex;
     flex-direction: row;
-    width:65%;
     justify-content:space-between;
-    margin:14px;
-    
-}
-.left{
-    display: flex;
-}
-.lebel a{
-    color: #ccc;
-    text-decoration: none;
-}
-.bottom-reg{
-display: block;
-position: absolute;
-text-align:justify;
-right: 0;
-left: 0px;
-margin-top: 8px;
-
+    margin-bottom: 3%;   
 }
