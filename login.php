@@ -60,7 +60,7 @@
 
 
           <div class="button">
-            <input type="submit" value="Sign In" name="submit" />
+            <input type="submit" value="Sign in" name="submit" />
           </div>
         </form>
         <div class="bottom-reg" style="margin-top: 3%;">
