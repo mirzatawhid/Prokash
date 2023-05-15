@@ -9,13 +9,13 @@
 
 :root{
     /* ===== Colors ===== */
-    --primary-color: #0E4BF1;
+    --primary-color: #0098FF;
     --panel-color: #FFF;
     --text-color: #000;
     --black-light-color: #707070;
     --border-color: #e6e5e5;
     --toggle-color: #DDD;
-    --box1-color: #4DA3FF;
+    --box1-color: #0098FF;
     --box2-color: #FFE6AC;
     --box3-color: #E7D1FC;
     --title-icon-color: #fff;
@@ -30,18 +30,7 @@ body{
     min-height: 100vh;
     background-color: var(--primary-color);
 }
-body.dark{
-    --primary-color: #3A3B3C;
-    --panel-color: #242526;
-    --text-color: #CCC;
-    --black-light-color: #CCC;
-    --border-color: #4D4C4C;
-    --toggle-color: #FFF;
-    --box1-color: #3A3B3C;
-    --box2-color: #3A3B3C;
-    --box3-color: #3A3B3C;
-    --title-icon-color: #CCC;
-}
+
 /* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
     width: 8px;
@@ -56,12 +45,7 @@ body.dark{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #0b3cc1;
-}
-
-body.dark::-webkit-scrollbar-thumb:hover,
-body.dark .activity-data::-webkit-scrollbar-thumb:hover{
-    background: #3A3B3C;
+    background: #0098FF;
 }
 
 nav{
@@ -71,7 +55,7 @@ nav{
     height: 100%;
     width: 250px;
     padding: 10px 14px;
-    background-color: var(--panel-color);
+    background-color: black;
     border-right: 1px solid var(--border-color);
     transition: var(--tran-05);
 }
@@ -127,9 +111,7 @@ nav .menu-items{
     border-radius: 50%;
     background-color: var(--primary-color);
 }
-body.dark li a:hover:before{
-    background-color: var(--text-color);
-}
+
 .menu-items li a i{
     font-size: 24px;
     min-width: 45px;
@@ -137,12 +119,12 @@ body.dark li a:hover:before{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--black-light-color);
+    color: rgb(197, 197, 197);
 }
 .menu-items li a .link-name{
     font-size: 18px;
     font-weight: 400;
-    color: var(--black-light-color);    
+    color: white;    
     transition: var(--tran-05);
 }
 nav.close li a .link-name{
@@ -310,26 +292,56 @@ nav.close ~ .dashboard .top{
     background-color: var(--box1-color);
     transition: var(--tran-05);
 }
+
+/*here have to change*/
+
 .boxes .box i{
     font-size: 35px;
     color: var(--text-color);
 }
 .boxes .box .text{
-    white-space: nowrap;
+    text-align: center;
     font-size: 18px;
     font-weight: 500;
     color: var(--text-color);
 }
+
+
+.activity .boxes .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: calc(100% / 3 - 30px);
+    padding: 35px 20px;
+    background-color: var(--box1-color);
+    transition: var(--tran-05);
+}
+
+
+.activity .boxes .box i{
+    font-size: 75px;
+    color: var(--text-color);
+}
+.activity .boxes .box .text{
+    margin-top: 1%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+
 .boxes .box .number{
     font-size: 40px;
     font-weight: 500;
     color: var(--text-color);
 }
 .boxes .box.box2{
-    background-color: var(--box2-color);
+    background-color: var(--box1-color);
 }
 .boxes .box.box3{
-    background-color: var(--box3-color);
+    background-color: var(--box1-color);
 }
 .dash-content .activity .activity-data{
     display: flex;

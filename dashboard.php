@@ -18,7 +18,7 @@
     <nav>
         <div class="logo-name">
             <div class="logo-image">
-                <img src="images/logo.png" alt="logo">
+                <img src="images/footer_logo.png" alt="logo">
             </div>
         </div>
 
@@ -29,20 +29,20 @@
                     <span class="link-name">Dahsboard</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Submission History</span>
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">User Profile</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-chart"></i>
-                    <span class="link-name">Analytics</span>
+                    <i class="uil uil-paperclip"></i>
+                    <span class="link-name">Submission List</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Like</span>
+                    <i class="uil uil-check-circle"></i>
+                    <span class="link-name">Verification List</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-comments"></i>
-                    <span class="link-name">Comment</span>
+                    <i class="uil uil-file-search-alt"></i>
+                    <span class="link-name">Reviewed List</span>
                 </a></li>
                 <li><a href="#">
                     <i class="uil uil-share"></i>
@@ -69,7 +69,7 @@
                 <input type="text" placeholder="Search here...">
             </div>
             
-            <!--<img src="images/profile.jpg" alt="">-->
+            <img src="images/user.png" alt="">
         </div>
 
         <div class="dash-content">
@@ -82,17 +82,17 @@
                 <div class="boxes">
                     <div class="box box1">
                         <i class="uil uil-thumbs-up"></i>
-                        <span class="text">Total Likes</span>
+                        <span class="text">Total Submission</span>
                         <span class="number">50,120</span>
                     </div>
                     <div class="box box2">
                         <i class="uil uil-comments"></i>
-                        <span class="text">Comments</span>
+                        <span class="text">Total Verified</span>
                         <span class="number">20,120</span>
                     </div>
                     <div class="box box3">
                         <i class="uil uil-share"></i>
-                        <span class="text">Total Share</span>
+                        <span class="text">Total Reviewed</span>
                         <span class="number">10,120</span>
                     </div>
                 </div>
@@ -100,9 +100,22 @@
 
             <div class="activity">
                 <div class="title">
-                    <i class="uil uil-clock-three"></i>
+                    <i class="uil uil-lottiefiles-alt"></i>
                     <span class="text">Recent Activity</span>
                 </div>
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-file-plus"></i>
+                        <span class="text">Total Submission</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-map-marker"></i>
+                        <span class="text">Complaint Mapping</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-users-alt"></i>
+                        <span class="text">Solution Forum</span>
+                    </div>
             </div>
         </div>
     </section>

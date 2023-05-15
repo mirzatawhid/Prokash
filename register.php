@@ -10,6 +10,62 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+
+  <!-- Country_city_state dropdown code -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Load states on page load
+      $.ajax({
+        url: 'get_states.php',
+        type: 'POST',
+        success: function(data) {
+          $('#state').html(data);
+        }
+      });
+
+      // Load districts on state change
+      $('#state').on('change', function() {
+        var stateId = $(this).val();
+        if (stateId) {
+          $.ajax({
+            url: 'get_districts.php',
+            type: 'POST',
+            data: {state_id: stateId},
+            success: function(data) {
+              $('#district').html(data);
+              $('#city').html('<option value="">Select City</option>');
+            }
+          });
+        } else {
+          $('#district').html('<option value="">Select District</option>');
+          $('#city').html('<option value="">Select City</option>');
+        }
+      });
+
+      // Load cities on district change
+      $('#district').on('change', function() {
+        var districtId = $(this).val();
+        if (districtId) {
+          $.ajax({
+            url: 'get_cities.php',
+            type: 'POST',
+            data: {district_id: districtId},
+            success: function(data) {
+              $('#city').html(data);
+            }
+          });
+        } else {
+          $('#city').html('<option value="">Select City</option>');
+        }
+      });
+    });
+  </script>
+
+
 </head>
 
 <body>
@@ -29,7 +85,7 @@
           $mobile = $_POST["mobile"];
           $address = $_POST["address"];
           $nid = $_POST["nid"];
-          $location = $_POST["location"];
+          $state = $_POST["state"];
           $city = $_POST["city"];
           $district = $_POST["district"];
           $id = '';
@@ -87,10 +143,10 @@
 
             $sql = "INSERT INTO user_details VALUES (?,?,?,?,?,?,?,?,?,?,?)";
             if ($stmt = mysqli_prepare($conn, $sql)) {
-              mysqli_stmt_bind_param($stmt, "issssssssss", $id, $fullname, $username, $email, $mobile, $password, $address, $nid, $location, $city, $district);
+              mysqli_stmt_bind_param($stmt, "issssssssss", $id, $fullname, $username, $email, $mobile, $password, $address, $nid, $state, $city, $district);
 
               if (mysqli_stmt_execute($stmt)) {
-                echo "<div class='alertbox alert alert-danger'>Registration Successful!</div>";
+                echo "<div class='alertbox alert alert-success'>Registration Successful!</div>";
                 
               } else {
                 echo "Somehing went Wrong!";
@@ -150,16 +206,22 @@
               <input type="number" name="nid" placeholder="Enter Your NID Number" required />
             </div>
             <div class="input_box">
-              <span class="detail">Location:</span>
-              <input type="text" name="location" placeholder="Enter Your Location" required />
-            </div>
-            <div class="input_box">
-              <span class="detail">City:</span>
-              <input type="text" name="city" placeholder="Enter Your City" required />
+              <span class="detail">State:</span>
+              <select class="state" name="state" id="state">
+    <option value="">Select State</option>
+  </select>
             </div>
             <div class="input_box">
               <span class="detail">District:</span>
-              <input type="text" name="district" placeholder="Enter Your District" required />
+              <select class="district" name="district" id="district">
+    <option value="">Select District</option>
+  </select>
+            </div>
+            <div class="input_box">
+              <span class="detail">Area:</span>
+              <select class="city" name="city" id="city">
+    <option value="">Select Area</option>
+  </select>
             </div>
           </div>
           <!-- <div class="gender_detail">

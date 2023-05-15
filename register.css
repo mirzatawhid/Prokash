@@ -88,6 +88,20 @@ form .user_detail .address_box{
     transition: all 0.3s ease;
 }
 
+.user_detail .input_box select{
+    height: 40px;
+    width: 100%;
+    margin-top: 1.5%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 80%;
+    font-family: "Montserrat";
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
 .user_detail .input_box input:focus,
 .user_detail .input_box input:valid{
     border-color: #0098FF;
