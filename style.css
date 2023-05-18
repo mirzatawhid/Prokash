@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat",sans-serif;
 }
 
 html{
@@ -296,7 +297,166 @@ label a{
     color: #2d373b;
     text-decoration: none;
     font-size: 15px;
-    
-    
+}
+
+/* comment section */
+
+.comment_container {
+  margin-top: 50px;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3f2fd;
+}
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  color: #4070f4;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
+
+/* case studies section */
+
+.case_container{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.case_main h1{
+    display: flex;
+    justify-content: center; 
+    color: black;
+}
+.case_main .description{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    margin: 20px;
+
+}
+.card{
+    background: #e3f2fd;
+    width: 100%;
+    height: 600px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+    border-radius: 3%;
+}
+.title{
+    text-align: center;
+    padding: 5px;
+    font-size: 40%;
+}
+
+.title h1{
+    display: flex;
+    justify-content: center; 
+    color: #0098FF;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+    padding: 5px;
+}
+.card button{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #0099ffd0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: #0098FF;
+    color: aliceblue;
+}
+.card .image{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 
 }
