@@ -95,7 +95,7 @@
     </div>
 
       <!--About us-->
-      <section class="about_sec">
+      <section class="about_sec" id="about_sec">
         <h1>About Us</h1>
         <div class="wrapper">
           <img src="images/about.png" alt="about logo">

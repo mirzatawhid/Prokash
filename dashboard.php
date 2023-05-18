@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+   header("Location: login.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <!--=== Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
@@ -51,7 +59,7 @@
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="#">
+                <li><a href="logout.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
