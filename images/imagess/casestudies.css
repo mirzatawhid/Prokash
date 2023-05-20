@@ -6,20 +6,18 @@
     font-family: "Poppins", sans-serif;
 }
 
-.container{
+.case_container{
     display: flex;
     justify-content: center;
     margin: 40px;
 }
-.main{
 
-}
-h1{
+.case_main h1{
     display: flex;
     justify-content: center; 
     color: rgb(43, 119, 191);
 }
-.description{
+.case_main .description{
     text-align: center;
     font-size: 15px;
     font-weight: 600;
@@ -38,6 +36,7 @@ h1{
 .title{
     text-align: center;
     padding: 5px;
+    
 }
 .text{
     text-align: center;

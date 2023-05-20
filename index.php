@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -95,7 +97,7 @@
     </div>
 
       <!--About us-->
-      <section class="about_sec">
+      <section class="about_sec" id="about_sec">
         <h1>About Us</h1>
         <div class="wrapper">
           <img src="images/about.png" alt="about logo">
@@ -112,6 +114,152 @@
           </div>
         </div>
       </section>
+
+
+      <!-- Case Studies Section -->
+
+      <div class="case_main">
+  <h1>Case Studies</h1>
+  <div class="description">
+  <p>'There are so may example of how our platform 'প্রকাশ' <br>has been used to
+     help the communities to solve their social problems.<br>Few of them are given below
+     that show the greater impact this technology can have promptly'</p>
+  </div>
+</div>
+
+    <div class="case_container">
+    <div class="card">
+          <div class="image">
+            <img
+              src="images/imagess/river.jpg"
+              style="width: 80%; height: auto"
+          />
+          </div>
+           <div class="title">
+            <h1>Pollution in Buriganga </h1>
+           </div>
+           <div class="text">
+            <p>
+                February 5,2022<br>
+                'Buriganga river is highly susceptible to extreme pollution.In this project in response of local community
+                 who rely on the river water and are in great risk,we gathered public opinion and sought the problem with youths
+                 ,school,college,universities's students and succesfully raised awarness.It was published on a famous news article also'
+            </p>
+            <button>Read more..</button>
+          </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img
+                src="images/imagess/vehicles.jpg"
+                style="width: 80%; height: auto"
+              />
+            </div>
+            <div class="title">
+              <h1>Damaged Vehicle Recycle Project</h1>
+            </div>
+            <div class="text">
+              <p>
+                July 15,2022<br>
+                  'In the basis of a statistics of problems in Gulisthan area a great number of damaged vehicle use has been seen.
+                  we have able to draw the attention of the authority to recycle those vehicle and also gathered public opinion 
+                  on this problem'
+                  
+              </p>
+              <button>Read more..</button>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                  <img
+                    src="images/imagess/structure.jpg"
+                    style="width: 70%; height: auto"
+                  />
+                </div>
+                <div class="title">
+                  <h1>Poor School infrastructure</h1>
+                </div>
+                <div class="text">
+                  <p>
+                    May 1,2020<br>
+                    'From this platform's data we have seen that the infrastructure of some school and colleges in old Dhaka
+                    are very poor and risky.we have successfully solve the problem by presenting them to the 
+                    authority.Now a large number of development project are going on.Specially 
+                    an Japanese company is workingin this project.'
+                  </p>
+                  <button>Read more..</button>
+                </div>
+                </div>
+
+              </div>
+
+
+
+    <!-- Comments Section -->
+
+    <section class="comment_container">
+      <div class="testimonial mySwiper">
+        <div class="testi-content swiper-wrapper">
+
+
+          <div class="slide swiper-slide">
+            <img src="images/homepageImages/sajeebsir.jpg" alt="" class="image" />
+            <p>
+              A great platform to observe the problem of our society.<br>
+              Specially the mapping system is wonderful.
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="details">
+              <span class="name">Sajeeb Shaha</span>
+              <span class="job">lecturer,CSE Department</span>
+            </div>
+          </div>
+
+
+          <div class="slide swiper-slide">
+            <img src="images/homepageImages/uzzalsirr.jpg" alt="" class="image" />
+            <p>
+              This is a very powerful platform by which we can solve many social problem<br>
+               we can gather  public opinion easily,it will helps the authority too.
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="details">
+              <span class="name">Pr.Uzzal Acharjee</span>
+              <span class="job">Chairman,CSE Department</span>
+       </div>
+          </div>
+
+
+          <div class="slide swiper-slide">
+           
+            <img src="images/homepageImages/layeksir.jpg" alt="" class="image" />
+            <p>
+              Such a useful website 'প্রকাশ' is,It will provide a great impact<br>
+                 on the issue that our people are facing in day to day life.It is very user
+                 friendly and easy to use that anyone can submit problem that are verified.<br>
+                 
+            </p>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="details">
+              <span class="name">Abu Layek</span>
+              <span class="job">lecturer,CSE Department</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="JS/script.js"></script>
+
+
 
       <!--FAQ Section -->
       <section class="faq_section" id="faq_sec">

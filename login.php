@@ -1,9 +1,4 @@
-<?php
-// session_start();
-// if (isset($_SESSION["user"])) {
-//   header("Location: dashboard.html");
-// }
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -95,7 +90,7 @@
 
             if ($password == $user["password"]) {
               session_start();
-              $_SESSION["user"] = "yes";
+              $_SESSION["user"] = $user["user_id"];
               header("Location: dashboard.php");
               die();
             } else {
