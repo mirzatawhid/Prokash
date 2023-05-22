@@ -27,6 +27,7 @@
 }
 
 body{
+    font-family: "Montserrat",sans-serif;
     min-height: 100vh;
     background-color: var(--primary-color);
 }
@@ -122,6 +123,7 @@ nav .menu-items{
     color: rgb(197, 197, 197);
 }
 .menu-items li a .link-name{
+    font-family: "Montserrat";
     font-size: 18px;
     font-weight: 400;
     color: white;    
@@ -158,29 +160,8 @@ body.dark .nav-links li a:hover .link-name{
     justify-content: center;
     cursor: pointer;
 }
-.mode-toggle .switch{
-    position: relative;
-    display: inline-block;
-    height: 22px;
-    width: 40px;
-    border-radius: 25px;
-    background-color: var(--toggle-color);
-}
-.switch:before{
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 15px;
-    width: 15px;
-    background-color: var(--panel-color);
-    border-radius: 50%;
-    transition: var(--tran-03);
-}
-body.dark .switch:before{
-    left: 20px;
-}
+
+/* dashboard */
 
 .dashboard{
     position: relative;
@@ -201,51 +182,14 @@ nav.close ~ .dashboard{
     left: 250px;
     display: flex;
     width: calc(100% - 250px);
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 10px 14px;
     background-color: var(--panel-color);
     transition: var(--tran-05);
     z-index: 10;
 }
-nav.close ~ .dashboard .top{
-    left: 73px;
-    width: calc(100% - 73px);
-}
-.dashboard .top .sidebar-toggle{
-    font-size: 26px;
-    color: var(--text-color);
-    cursor: pointer;
-}
-.dashboard .top .search-box{
-    position: relative;
-    height: 45px;
-    max-width: 600px;
-    width: 100%;
-    margin: 0 30px;
-}
-.top .search-box input{
-    position: absolute;
-    border: 1px solid var(--border-color);
-    background-color: var(--panel-color);
-    padding: 0 25px 0 50px;
-    border-radius: 5px;
-    height: 100%;
-    width: 100%;
-    color: var(--text-color);
-    font-size: 15px;
-    font-weight: 400;
-    outline: none;
-}
-.top .search-box i{
-    position: absolute;
-    left: 15px;
-    font-size: 22px;
-    z-index: 10;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--black-light-color);
-}
+
 .top img{
     width: 40px;
     border-radius: 50%;
@@ -271,6 +215,7 @@ nav.close ~ .dashboard .top{
     font-size: 24px;
 }
 .dash-content .title .text{
+    font-family: "Montserrat";
     font-size: 24px;
     font-weight: 500;
     color: var(--text-color);
@@ -300,6 +245,7 @@ nav.close ~ .dashboard .top{
     color: var(--text-color);
 }
 .boxes .box .text{
+    font-family: "Montserrat";
     text-align: center;
     font-size: 18px;
     font-weight: 500;
@@ -307,7 +253,8 @@ nav.close ~ .dashboard .top{
 }
 
 
-.activity .boxes .box{
+.activity .boxes a{
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,12 +265,12 @@ nav.close ~ .dashboard .top{
     transition: var(--tran-05);
 }
 
-
-.activity .boxes .box i{
+.activity .boxes a i{
     font-size: 75px;
     color: var(--text-color);
 }
-.activity .boxes .box .text{
+.activity .boxes a .text{
+    font-family: "Montserrat";
     margin-top: 1%;
     text-align: center;
     font-size: 40px;
