@@ -167,7 +167,7 @@
       <div class="form_container">
 
         <div class="home_button">
-          <a href="index.php"><i class="fa fa-home"></i> Return to the Home</a>
+          <a href="index.html"><i class="fa fa-home"></i> Return to the Home</a>
         </div>
         <br>
         <br>
