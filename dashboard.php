@@ -31,14 +31,13 @@ require "connection.php";
                 <img src="images/footer_logo.png" alt="logo">
             </div>
         </div>
-
         <div class="menu-items">
             <ul class="nav-links">
                 <li><a href="#">
                         <i class="uil uil-estate"></i>
                         <span class="link-name">Dahsboard</span>
                     </a></li>
-                <li><a href="#">
+                <li><a href="home.php">
                         <i class="uil uil-user"></i>
                         <span class="link-name">User Profile</span>
                     </a></li>

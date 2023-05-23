@@ -2,7 +2,7 @@
 
 include 'connection.php';
 session_start();
-$user_id = $_SESSION['user_id'];
+$user_id = $_SESSION['user'];
 
 if(isset($_POST['update_profile'])){
 
@@ -69,7 +69,7 @@ if(isset($_POST['update_profile'])){
     <div class="update-profile">
 
         <?php
-      $select = mysqli_query($conn, "SELECT * FROM `user_details` WHERE id = '$user_id'") or die('query failed');
+      $select = mysqli_query($conn, "SELECT * FROM `user_details` WHERE user_id = '$user_id'") or die('query failed');
       if(mysqli_num_rows($select) > 0){
          $fetch = mysqli_fetch_assoc($select);
       }
@@ -90,8 +90,8 @@ if(isset($_POST['update_profile'])){
       ?>
             <div class="flex">
                 <div class="inputBox">
-                    <span>username :</span>
-                    <input type="text" name="update_name" value="<?php echo $fetch['name']; ?>" class="box">
+                    <span>Full Name :</span>
+                    <input type="text" name="update_name" value="<?php echo $fetch['full_name']; ?>" class="box">
                     <span>your email :</span>
                     <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>" class="box">
                     <span>update your pic :</span>

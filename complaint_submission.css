@@ -186,8 +186,8 @@ nav.close ~ .submission .top{
 
 /* Submission form */
 
-h1{
-    margin-top: 4%;
+.submission .form_content .form_title{
+    margin-top: 3%;
     font-family: "Montserrat";
     font-weight: 800;
     font-size: 50px;
@@ -298,7 +298,7 @@ form .button input{
     height: 100%;
     width: 100%;
     font-size: 2vh;
-    padding: 2%;
+    padding: 1%;
     font-weight: 600;
     outline: none;
     border: none;
