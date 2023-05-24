@@ -37,7 +37,7 @@ require "connection.php";
                         <i class="uil uil-estate"></i>
                         <span class="link-name">Dahsboard</span>
                     </a></li>
-                <li><a href="home.php">
+                <li><a href="user_profile.php">
                         <i class="uil uil-user"></i>
                         <span class="link-name">User Profile</span>
                     </a></li>

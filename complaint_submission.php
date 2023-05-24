@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-    header("Location: login.php");
+  header("Location: login.php");
 }
 $user_id = $_SESSION["user"];
 require "connection.php";
@@ -16,9 +16,11 @@ require "connection.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Complaint Submission</title>
   <link rel="stylesheet" href="complaint_submission.css">
+  
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+  
+  <link rel="stylesheet" href="side_bar.css">
 
 
   <!-- Country_city_state dropdown code -->
@@ -83,34 +85,34 @@ require "connection.php";
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-          // Load states on page load
-          $.ajax({
-            url: 'get_category.php',
-            type: 'POST',
-            success: function(data) {
-              $('#category').html(data);
-            }
-          });
+      // Load states on page load
+      $.ajax({
+        url: 'get_category.php',
+        type: 'POST',
+        success: function(data) {
+          $('#category').html(data);
+        }
+      });
 
-          // Load districts on state change
-          $('#category').on('change', function() {
-            var categoryId = $(this).val();
-            if (categoryId) {
-              $.ajax({
-                url: 'get_subcategory.php',
-                type: 'POST',
-                data: {
-                  category_id: categoryId
-                },
-                success: function(data) {
-                  $('#sub_category').html(data);
-                }
-              });
-            } else {
-              $('#sub_category').html('<option value="">Select Sub-Category</option>');
+      // Load districts on state change
+      $('#category').on('change', function() {
+        var categoryId = $(this).val();
+        if (categoryId) {
+          $.ajax({
+            url: 'get_subcategory.php',
+            type: 'POST',
+            data: {
+              category_id: categoryId
+            },
+            success: function(data) {
+              $('#sub_category').html(data);
             }
           });
-        });
+        } else {
+          $('#sub_category').html('<option value="">Select Sub-Category</option>');
+        }
+      });
+    });
   </script>
 
 
@@ -132,7 +134,7 @@ require "connection.php";
             <i class="uil uil-estate"></i>
             <span class="link-name">Dahsboard</span>
           </a></li>
-        <li><a href="#">
+        <li><a href="user_profile.php">
             <i class="uil uil-user"></i>
             <span class="link-name">User Profile</span>
           </a></li>
@@ -186,9 +188,9 @@ require "connection.php";
         $state = $_POST["state"];
         $district = $_POST["district"];
         $area = $_POST["city"];
-        if(isset($_POST["anonymous"])){
+        if (isset($_POST["anonymous"])) {
           $userid = NULL;
-        }else{
+        } else {
           $userid = $user_id;
         }
         $comment = $_POST['comment'];
@@ -197,29 +199,29 @@ require "connection.php";
         if ($file['size'] <= 25 * 1024 * 1024) {
           $name = $file['name'];
           $type = $file['type'];
-      
+
           // Generate a unique file name
           $filename = uniqid() . '_' . $name;
-      
+
           // Destination folder to store the uploaded files
           $destination = 'Complaint_Media/' . $filename;
-      
+
           // Move the uploaded file to the destination folder
           if (move_uploaded_file($file['tmp_name'], $destination)) {
             // Insert the file path into the database
             require 'connection.php';
             $sql = "INSERT INTO complaint_list(user_id,prb_title,category,sub_category,prb_address,prb_state,prb_district,prb_area,prb_datetime,prb_desc,prb_medianame,prb_mediatype,prb_mediapath) VALUES (?, ?, ?, ?, ?, ?, ?, ?,NOW(), ?, ?, ?, ?)";
-            if($stmt = mysqli_prepare($conn, $sql)){
-            mysqli_stmt_bind_param($stmt, "isiisiiissss", $userid, $title, $category, $sub_category, $address, $state, $district, $area, $comment, $name, $type, $destination);
-            if (mysqli_stmt_execute($stmt)) {
-              echo "<div class='alertbox alert alert-success'>Complaint Submission Successful!</div>";
+            if ($stmt = mysqli_prepare($conn, $sql)) {
+              mysqli_stmt_bind_param($stmt, "isiisiiissss", $userid, $title, $category, $sub_category, $address, $state, $district, $area, $comment, $name, $type, $destination);
+              if (mysqli_stmt_execute($stmt)) {
+                echo "<div class='alertbox alert alert-success'>Complaint Submission Successful!</div>";
+              } else {
+                echo "Somehing went Wrong!";
+              }
+              mysqli_stmt_close($stmt);
             } else {
-              echo "Somehing went Wrong!";
+              echo mysqli_report(MYSQLI_REPORT_ALL);
             }
-            mysqli_stmt_close($stmt);
-          }else{
-            echo mysqli_report(MYSQLI_REPORT_ALL);
-          }
           } else {
             echo "Error moving the file to the destination.";
           }
@@ -275,7 +277,7 @@ require "connection.php";
             <div class="input_box switch">
               <span class="detail">Post as Anonymous:</span>
               <div class="switch_container">
-                <input type="checkbox" name="anonymous" id="switcher"/>
+                <input type="checkbox" name="anonymous" id="switcher" />
                 <label for="switcher" class="switch_button"></label>
               </div>
             </div>

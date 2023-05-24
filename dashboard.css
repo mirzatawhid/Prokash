@@ -32,23 +32,6 @@ body{
     background-color: var(--primary-color);
 }
 
-/* === Custom Scroll Bar CSS === */
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0098FF;
-}
-
 nav{
     position: fixed;
     top: 0;
