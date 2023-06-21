@@ -16,10 +16,10 @@ require "connection.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Complaint Submission</title>
   <link rel="stylesheet" href="complaint_submission.css">
-  
+
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  
+
   <link rel="stylesheet" href="side_bar.css">
 
 
@@ -137,6 +137,14 @@ require "connection.php";
         <li><a href="user_profile.php">
             <i class="uil uil-user"></i>
             <span class="link-name">User Profile</span>
+          </a></li>
+        <li><a href="#">
+            <i class="uil uil-file-check"></i>
+            <span class="link-name">Pending Verification List</span>
+          </a></li>
+        <li><a href="#">
+            <i class="uil uil-file-check-alt"></i>
+            <span class="link-name">Pending Approved List</span>
           </a></li>
         <li><a href="#">
             <i class="uil uil-paperclip"></i>

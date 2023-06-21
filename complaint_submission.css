@@ -43,10 +43,7 @@ body{
     padding: 10px 14px;
     transition: var(--tran-05);
 }
-nav.close ~ .submission{
-    left: 73px;
-    width: calc(100% - 73px);
-}
+
 .submission .top{
     position: fixed;
     top: 0;

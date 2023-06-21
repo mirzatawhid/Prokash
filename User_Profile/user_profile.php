@@ -1,6 +1,6 @@
 <?php
 
-include 'connection.php';
+include '../connection.php';
 session_start();
 $user_id = $_SESSION["user"];
 
@@ -21,7 +21,7 @@ if (!isset($user_id)) {
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="user.css">
-   <link rel="stylesheet" href="side_bar.css">
+   <link rel="stylesheet" href="../side_bar.css">
    <!----===== Iconscout CSS ===== -->
    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -34,12 +34,12 @@ if (!isset($user_id)) {
    <nav>
       <div class="logo-name">
          <div class="logo-image">
-            <img src="images/footer_logo.png" alt="logo">
+            <img src="../images/footer_logo.png" alt="logo">
          </div>
       </div>
       <div class="menu-items">
          <ul class="nav-links">
-            <li><a href="dashboard.php">
+            <li><a href="../dashboard.php">
                   <i class="uil uil-estate"></i>
                   <span class="link-name">Dahsboard</span>
                </a></li>
@@ -66,7 +66,7 @@ if (!isset($user_id)) {
          </ul>
 
          <ul class="logout-mode">
-            <li><a href="logout.php">
+            <li><a href="../logout.php">
                   <i class="uil uil-signout"></i>
                   <span class="link-name">Logout</span>
                </a></li>
@@ -91,9 +91,9 @@ if (!isset($user_id)) {
                $fetch = mysqli_fetch_assoc($select);
             }
             if ($fetch['user_medianame'] == '') {
-               echo '<img src="images/user.png">';
+               echo '<img src="../images/user.png">';
             } else {
-               echo '<img src="User_DP/' . $fetch['user_medianame'] . '">';
+               echo '<img src="../User_DP/' . $fetch['user_medianame'] . '">';
             }
             ?>
             <h2><?php echo $fetch['full_name']; ?></h2>

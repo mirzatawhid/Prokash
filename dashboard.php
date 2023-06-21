@@ -37,9 +37,17 @@ require "connection.php";
                         <i class="uil uil-estate"></i>
                         <span class="link-name">Dahsboard</span>
                     </a></li>
-                <li><a href="user_profile.php">
+                <li><a href="User_profile/user_profile.php">
                         <i class="uil uil-user"></i>
                         <span class="link-name">User Profile</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="uil uil-file-check"></i>
+                        <span class="link-name">Pending Verification List</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="uil uil-file-check-alt"></i>
+                        <span class="link-name">Pending Approved List</span>
                     </a></li>
                 <li><a href="#">
                         <i class="uil uil-paperclip"></i>
@@ -137,7 +145,7 @@ require "connection.php";
                         <i class="uil uil-file-plus"></i>
                         <span class="text">Complaint Submission</span>
                     </a>
-                    <a href="#">
+                    <a href="Complaint_Mapping/complaint_mapping.php">
                         <i class="uil uil-map-marker"></i>
                         <span class="text">Complaint Mapping</span>
                     </a>
