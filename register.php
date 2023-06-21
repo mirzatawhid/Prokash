@@ -144,7 +144,7 @@
         } else {
 
 
-          $sql = "INSERT INTO user_details VALUES (?,?,?,?,?,?,?,?,?,?,?)";
+          $sql = "INSERT INTO user_details VALUES (?,?,?,?,?,?,?,?,?,?,?,NULL)";
           if ($stmt = mysqli_prepare($conn, $sql)) {
             mysqli_stmt_bind_param($stmt, "issssssssss", $id, $fullname, $username, $email, $mobile, $password, $address, $nid, $state, $city, $district);
 
