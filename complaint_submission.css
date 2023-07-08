@@ -262,3 +262,40 @@ form .button input:hover{
 #switcher{
     display: none;
 }
+
+
+/*cross_button*/
+.radio-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  label {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input[type="radio"]:checked + label.checkmark {
+    border-color: green;
+    color: green;
+  }
+  
+  input[type="radio"]:checked + label.crossmark {
+    border-color: red;
+    color: red;
+  }
+
