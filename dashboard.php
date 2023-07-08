@@ -41,7 +41,7 @@ require "connection.php";
                         <i class="uil uil-user"></i>
                         <span class="link-name">User Profile</span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="Complaint_Media/com_list.php">
                         <i class="uil uil-file-check"></i>
                         <span class="link-name">Pending Verification List</span>
                     </a></li>
